@@ -76,7 +76,7 @@ function getSingleStatus(dlDetails: details.DlVars, msg?: TelegramBot.Message): 
         }
       });
     } else {
-      resolve({ message: `You aren't authorized to use this bot here.` });
+      resolve({ message: `You aren't authorized to use this bot here. Please use @UrlToGDBot` });
     }
   });
 }
