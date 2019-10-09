@@ -58,7 +58,7 @@ export function sendMessage(bot: TelegramBot, msg: TelegramBot.Message, text: st
 }
 
 export function sendUnauthorizedMessage(bot: TelegramBot, msg: TelegramBot.Message): void {
-  sendMessage(bot, msg, `You aren't authorized to use this bot here.`);
+  sendMessage(bot, msg, `You aren't authorized to use this bot here. Please use @UrlToGDBot`);
 }
 
 export function sendMessageReplyOriginal(bot: TelegramBot, dlDetails: details.DlVars, message: string): Promise<TelegramBot.Message> {
